@@ -1,0 +1,36 @@
+
+KAGLE - TITANIC COMPETITION 
+===========================
+
+survival 	Survival 	0 = No, 1 = Yes
+pclass 	    Ticket class 	1 = 1st, 2 = 2nd, 3 = 3rd
+sex 	    Sex
+Age 	    Age in years
+sibsp 	    # of siblings / spouses aboard the Titanic
+parch 	    # of parents / children aboard the Titanic
+ticket 	    Ticket number
+fare 	    Passenger fare
+cabin 	    Cabin number
+embarked 	Port of Embarkation 	C = Cherbourg, Q = Queenstown, S = Southampton
+
+features  PassengerId    891
+          Pclass         891
+          Name           891
+          Sex            891
+          Age            714    Nan
+          SibSp          891
+          Parch          891
+          Ticket         891
+          Fare           891
+          Cabin          204    Nan
+          Embarked       889    Nan
+label     Survived       891
+
+                     PassengerId    Pclass       Age     SibSp     Parch      Fare  Survived
+features PassengerId    1.000000 -0.035144  0.036847 -0.057527 -0.001652  0.012658 -0.005007
+         Pclass        -0.035144  1.000000 -0.369226  0.083081  0.018443 -0.549500 -0.338481
+         Age            0.036847 -0.369226  1.000000 -0.308247 -0.189119  0.096067 -0.077221
+         SibSp         -0.057527  0.083081 -0.308247  1.000000  0.414838  0.159651 -0.035322
+         Parch         -0.001652  0.018443 -0.189119  0.414838  1.000000  0.216225  0.081629
+         Fare           0.012658 -0.549500  0.096067  0.159651  0.216225  1.000000  0.257307
+label    Survived      -0.005007 -0.338481 -0.077221 -0.035322  0.081629  0.257307  1.000000
